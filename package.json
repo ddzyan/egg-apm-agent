@@ -1,6 +1,6 @@
 {
   "name": "egg-apm-agent",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "egg框架集成apm-agent-node功能",
   "eggPlugin": {
     "name": "eggApmAgent"
@@ -39,7 +39,10 @@
     "app.js",
     "agent.js",
     "config",
-    "app"
+    "app",
+    "instrumentation",
+    "lib",
+    "apm-register.js"
   ],
   "ci": {
     "version": "8, 10"
