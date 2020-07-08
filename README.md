@@ -31,7 +31,7 @@ module.exports = {
 ```json
 {
   "scripts":{
-    "debug": "ELASTIC_APM_SERVICE_NAME=test12 ELASTIC_APM_SERVER_URL='http://10.10.0.130:8200' egg-bin debug --require=egg-apm-agent/apm-register.js",
+    "debug": "ELASTIC_APM_SERVICE_NAME=test12 ELASTIC_APM_SERVER_URL='http://127.0.0.1:8200' egg-bin debug --require=egg-apm-agent/apm-register.js",
   }
 }
 ```
