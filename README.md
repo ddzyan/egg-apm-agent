@@ -1,6 +1,10 @@
 ## 简介
 使用 elastic-apm-node 封装 egg 插件，完成对请求路由链路日志的上传elk+apm平台，分析链路中逻辑消耗的时间
 
+参考文档：
+1. http://claude-ray.com/2019/07/12/elastic-apm-node-egg/
+2. https://code.yeezon.com/zen/egg-apm
+
 ### 完成功能
 1. 应用路由链路上传
 2. 应用错误对象上传
