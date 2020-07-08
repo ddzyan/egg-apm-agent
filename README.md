@@ -9,6 +9,7 @@
 1. 应用路由链路上传
 2. 应用错误对象上传
 
+
 ### 使用
 
 ```shell
@@ -16,11 +17,12 @@ yarn add egg-apm-agent
 ```
 
 添加插件 config/plugin.js
-```json
+```js
 module.exports = {
  eggApmAgent: {
     enable: true,
     package: 'egg-apm-agent',
+    env: [ 'prod' ], // 建议只在生产环境中启用
   }
 }
 ```
