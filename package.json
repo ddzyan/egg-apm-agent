@@ -1,6 +1,6 @@
 {
   "name": "egg-apm-agent",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "egg框架集成apm-agent-node功能",
   "eggPlugin": {
     "name": "eggApmAgent"
@@ -46,12 +46,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-egg-apm-agent.git"
+    "url": "git+https://github.com/ddzyan/egg-apm-agent.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/ddzyan/egg-apm-agent/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-egg-apm-agent#readme",
+  "homepage": "https://github.com/ddzyan/egg-apm-agent",
   "author": "ddz",
   "license": "MIT"
 }
