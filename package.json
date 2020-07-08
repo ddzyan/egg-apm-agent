@@ -1,6 +1,6 @@
 {
   "name": "egg-apm-agent",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "egg框架集成apm-agent-node功能",
   "eggPlugin": {
     "name": "eggApmAgent"
@@ -24,7 +24,7 @@
     "eslint-config-egg": "^7.1.0"
   },
   "engines": {
-    "node": ">=8.0.0"
+    "node": ">=12.18.2"
   },
   "scripts": {
     "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
