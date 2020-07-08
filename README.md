@@ -22,7 +22,7 @@ module.exports = {
  eggApmAgent: {
     enable: true,
     package: 'egg-apm-agent',
-    env: [ 'prod' ], // 建议只在生产环境中启用
+    // env: [ 'prod' ], // 建议只在生产环境中启用
   }
 }
 ```
@@ -36,16 +36,29 @@ module.exports = {
 }
 ```
 
-添加 /app/middleware/apmRouter.js , 定义 transaction 名称，可以在这里修改 transaction 显示逻辑
+添加 /app/middleware/apmRouter.js , 定义 transaction 名称，之所以不集成到插件中，是因为场景不同可能需要进行修改
 ```js
 'use strict';
 
+function getPath(stack, path) {
+  const layer = stack.find(i => i.regexp.test(path));
+  const protoPath = layer && layer.path;
+  return typeof protoPath === 'string'
+    ? protoPath
+    : 'unknown route';
+}
+
+
 module.exports = () => {
   return async (ctx, next) => {
-    ctx.app.apm.setTransactionName(ctx.method + ' ' + ctx.request.body.query); // fix unknown router
+    const path = getPath(ctx.app.router.stack, ctx.path);
+    ctx.app.apm.setTransactionName(ctx.method + ' ' + path); // fix unknown router
+
     await next();
+
   };
 };
+
 
 ```
 
