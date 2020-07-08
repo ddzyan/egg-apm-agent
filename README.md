@@ -7,6 +7,10 @@
 
 ### 使用
 
+```shell
+yarn add egg-apm-agent
+```
+
 添加插件 config/plugin.js
 ```json
 module.exports = {
