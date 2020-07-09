@@ -4,6 +4,7 @@
 参考文档：
 1. http://claude-ray.com/2019/07/12/elastic-apm-node-egg/
 2. https://code.yeezon.com/zen/egg-apm
+3. http://www.zmscode.cn/2020/07/09/docker-compose%E9%83%A8%E7%BD%B2eak/
 
 ### 完成功能
 1. 应用路由链路上传
