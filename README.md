@@ -61,8 +61,9 @@ npm run debug
 echo service end!!
 ```
 
+#### 以下不是必须
 
-添加 /app/middleware/apmRouter.js , 定义 transaction 名称，之所以不集成到插件中，是因为场景不同可能需要进行修改
+可以通过添加 /app/middleware/apmRouter.js 中间件 , 自定义 transaction 名称，之所以不集成到插件中，是因为场景不同可能需要进行修改
 ```js
 'use strict';
 
