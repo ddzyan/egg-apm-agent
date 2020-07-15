@@ -1,3 +1,6 @@
+[![npm](https://img.shields.io/npm/dt/egg-apm-agent.svg)](https://github.com/ddzyan/egg-apm-agent)
+
+
 ## 简介
 使用 elastic-apm-node 封装 egg 插件，完成对请求路由链路日志的上传elk+apm平台，分析链路中逻辑消耗的时间
 
