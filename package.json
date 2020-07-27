@@ -11,7 +11,9 @@
     "egg-plugin"
   ],
   "dependencies": {
-    "elastic-apm-node": "^3.6.1"
+    "elastic-apm-node": "^3.6.1",
+    "global": "^4.4.0",
+    "ncu": "^0.2.1"
   },
   "devDependencies": {
     "autod": "^3.1.0",
